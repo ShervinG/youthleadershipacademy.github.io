@@ -1,0 +1,274 @@
+.navContainer {
+    position: fixed;
+    width: 5.5rem;
+    height: 5.5rem;
+    top: 1.5rem;
+    left: 1.5rem;
+    border-radius: 25%;
+    z-index: 9;
+}
+
+.menuIcon {
+    background: #88CDDF;
+    width: 100%;
+    height: 100%;
+    border-radius: 25%;
+    top: 1.5rem;
+    left: 1.5rem;
+    transition: 0.5s;
+}
+
+.hamburger {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 12%;
+    bottom: 24%;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.hamburger2 {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 12%;
+    bottom: 44%;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.hamburger3 {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 12%;
+    bottom: 64%;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.menuIcon:hover {
+    background-color: #70b1c2;
+}
+
+.navContainer:hover .hamburger {
+    background-color: rgb(207, 207, 207);
+}
+
+.navContainer:hover .hamburger2 {
+    background-color: rgb(207, 207, 207);
+}
+
+.navContainer:hover .hamburger3 {
+    background-color: rgb(207, 207, 207);
+}
+
+.navContainer:hover .menuIcon {
+    background-color: #70b1c2;
+}
+
+.navBar {
+    display: block;
+    z-index: 10;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    background: #88CDDF;
+    opacity: 1;
+    transition: 0.5s;
+    padding-top: 2.1rem;
+}
+
+.navBar.closedNav {
+  width: 0%;
+}
+
+.navBar.openNav {
+  width: 20%
+}
+
+.navBar a {
+    color: #363636;
+    font-family: Helvetica, serif;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.menubtn {
+    display: block;
+    padding: 4.2rem 0.5rem 4.2rem 2.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.3vw;
+}
+
+.menubtn:hover {
+    background-color: #70b1c2;
+}
+
+.closebtnDiv {
+    height: auto;
+    margin-bottom: 2.8rem;
+}
+
+.closebtn {
+    position: absolute;
+    display: inline;
+    right: 1.75rem;
+    font-size: 2.6vw;
+    text-align: right;
+}
+
+.dropbtn {
+    background-color: #88CDDF;
+    color: #363636;
+    font-family: Helvetica, serif;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: block;
+    padding: 4.2rem 0.5rem 4.2rem 2.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.3vw;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #70b1c2;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #88CDDF;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #70b1c2;
+}
+
+.show {
+    display: block;
+}
+
+
+/* Sets background image */
+
+.background {
+    background-attachment: fixed;
+    
+    background-color: rgb(20, 131, 179);
+    background-size: cover;
+}
+
+
+/* Centers the header */
+
+.header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+
+/* Stylizes the header text*/
+
+.header_text {
+    display: block;
+    font-size: 0.5em;
+    margin-top: 3em;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+
+/* Sets basic properties for logo */
+
+.header_logo {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 0.5em;
+    margin-right: 0.25em;
+}
+
+@media (max-width: 800px) {
+  .header{
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .header_text {
+      margin-top: 7em;
+    font-size: 0.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .header_logo {
+    width: 20vw;
+    height: 20vw;
+  
+    margin-bottom: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .menubtn {
+    font-size: 5vw;
+  }
+
+  .navBar.openNav {
+    width: 100%
+  }
+
+  .closebtn {
+      font-size: 3rem;
+  }
+
+  .dropbtn {
+    font-size: 5vw;
+  }
+
+  .navContainer {
+      width: 3em;
+      height: 3em;
+  }
+
+  .header_text {
+      font-size: 0.3em;
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+}
